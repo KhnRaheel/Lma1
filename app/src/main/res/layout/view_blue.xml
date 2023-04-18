@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_back_dark">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|top"
+        android:layout_marginTop="150dp"
+        android:nestedScrollingEnabled="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="25dp"
+                    android:paddingVertical="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                         <Switch
+                            android:id="@+id/prevention_state_main"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:paddingVertical="10dp"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/enable_lock_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="start|center"
+                            android:paddingHorizontal="10dp"
+                            android:background="@drawable/selector2"
+                            android:onClick="checkPermission"
+                            android:paddingVertical="10dp"
+                            android:text="@string/enable"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/orange"/>
+                    <Button
+                        android:id="@+id/lock_settings"
+                        android:layout_width="match_parent"
+                        android:paddingHorizontal="10dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector2"
+                        android:elevation="20dp"
+                        android:gravity="start|center"
+                        android:text="Lock Screen Settings"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="12dp"
+                android:elevation="12dp"
+                app:cardBackgroundColor="@color/grey"
+                app:cardCornerRadius="15dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="25dp"
+                    android:paddingVertical="10dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <Switch
+                            android:id="@+id/switch_State"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:clickable="false"
+                            android:gravity="center"
+                            android:layout_gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                        <Button
+                            android:id="@+id/enable_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="10dp"
+                            android:background="@drawable/selector2"
+                            android:onClick="enableBroadcastReceiver"
+                            android:gravity="start|center"
+                            android:paddingVertical="10dp"
+                            android:text="Enable Sms Controller"
+                            android:textColor="@color/white"
+                            android:textSize="15sp" />
+                    </FrameLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/orange"/>
+                    <Button
+                        android:id="@+id/disable_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/selector2"
+                        android:onClick="disableBroadcastReceiver"
+                        android:paddingHorizontal="10dp"
+                        android:gravity="start|center"
+                        android:paddingVertical="10dp"
+                        android:text="disable sms controller"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/orange"/>
+                    <Button
+                        android:id="@+id/sms_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingHorizontal="10dp"
+                        android:background="@drawable/selector2"
+                        android:gravity="start|center"
+                        android:onClick="sms_settings"
+                        android:paddingVertical="10dp"
+                        android:text="@string/configure_sms_control"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

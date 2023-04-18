@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="1"
+        android:scaleType="centerCrop"
+        android:src="@drawable/lockscreen_background" />
+
+    <ImageView
+        android:id="@+id/img_back2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0"
+        android:scaleType="centerCrop"
+        android:src="@color/blackTransparent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <DigitalClock
+            android:id="@+id/clock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:alpha="0"
+            android:fontFamily="sans-serif-light"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/tv_note1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:gravity="center"
+            android:text="Draw your Pattern"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center|bottom"
+                android:paddingBottom="30dp"
+                android:gravity="bottom|center">
+                <TextView
+                    android:id="@+id/tv_unlock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Draw unlock Pattern"
+                    android:layout_marginBottom="5dp"
+                    android:textColor="@color/white"/>
+                <com.andrognito.patternlockview.PatternLockView
+                    android:id="@+id/pattern_lock_view"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    app:correctStateColor="@color/green" />
+                <Button
+                    android:id="@+id/btn_Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:alpha="0"
+                    android:paddingHorizontal="25dp"
+                    android:background="@drawable/back3"
+                    android:scaleX="1.5"
+                    android:scaleY="1.5"
+                    android:text="cancel"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center|bottom"
+        android:orientation="vertical"
+        android:gravity="bottom|center"
+        android:layout_marginBottom="100dp">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="50dp"
+        android:alpha="1"
+        android:drawableTop="@drawable/lock_white"
+        android:gravity="center"
+        android:text="Swipe screen to unlock"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+</FrameLayout>

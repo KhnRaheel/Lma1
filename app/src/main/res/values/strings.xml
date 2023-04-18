@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">Locate My Android</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm">confirm</string>
+    <string name="remember">Remember: Password is not case sensitive</string>
+    <string name="previous_password">Previous Password</string>
+    <string name="reach_your_phone_n_even_when_offline">Reach your phone\n even when offline</string>
+    <string name="sms_controller">SMS Controller</string>
+    <string name="enable">enable lock screen</string>
+    <string name="disable">Disable</string>
+    <string name="pkg">com.reachit</string>
+    <string name="cls">com.reachit.activities</string>
+    <string name="configure_sms_control">configure Sms control</string>
+    <string name="red" />
+    <string name="blue" />
+    <string name="orange" />
+    <string name="contact_us"><u>Rate App</u></string>
+    <string name="send_location_command">\t\t\t\t1. send location:\n \t\t\t\t\t\t\t\t Phone sends its GPS coordinates\n\t\t\t\t\t\t\t\t back to the sender\'s phone.</string>
+    <string name="scream_command">\t\t\t\t2. scream: \n\t\t\t\t\t\t\t\tPhone starts screaming \'I am here\'\n\t\t\t\t\t\t\t\teven when it is silent</string>
+    <string name="stop_command">\t\t\t\t3. stop: \n\t\t\t\t\t\t\t\tPhone stops screaming.</string>
+    <string name="blink_flash_command">\t\t\t\t4. blink flash: \n\t\t\t\t\t\t\t\tPhone blinks flash\n\t\t\t\t\t\t\t\tfor few seconds</string>
+    <string name="welcome_back_sign_in_to_continue"><b>Welcome Back!</b> Sign in to continue</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember_me</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="sl">-</string>
+    <string name="no_account">No Account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="tracking">Tracking</string>
+    <string name="lock_screen_settings">Lock Screen settings</string>
+    <string name="phone_recovery">Phone Recovery</string>
+    <string name="add_device">Add Device</string>
+    <string name="device_id">Device Id</string>
+    <string name="device_imei">Device IMEI</string>
+
+</resources>
