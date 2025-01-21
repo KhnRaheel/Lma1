@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activities.SetPatternActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/set_pattern"
+        android:scaleType="centerCrop"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/dark_Transparent"
+        android:gravity="center">
+
+    <DigitalClock
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/text_instruct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Set Your Pattern"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"/>
+
+    <com.andrognito.patternlockview.PatternLockView
+        android:id="@+id/pattern_set_lock_view"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        app:correctStateColor="@color/green" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn"
+        android:alpha="0"
+        android:enabled="false"
+        android:text="connfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:background="@drawable/selector2"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="25sp"/>
+    <Button
+        android:id="@+id/btn_reset"
+        android:text="Reset"
+        android:alpha="0"
+        android:enabled="false"
+        android:textColor="@color/white"
+        android:background="@drawable/selector2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginBottom="25dp"
+        android:layout_marginStart="25sp"/>
+
+</FrameLayout>

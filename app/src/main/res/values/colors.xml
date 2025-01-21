@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="background">#C0392B</color>
+    <color name="secondary_Background">#E74C3C</color>
+    <color name="secondary_grey">#A39D9D</color>
+    <color name="textcolor">#000000</color>
+    <color name="hint_color">#000000</color>
+    <color name="btn_color">#3A36F6</color>
+    <color name="card_back1">#99EDC3</color>
+    <color name="card_back2">#607D3B</color>
+    <color name="navy_blue">#000080</color>
+
+    <color name="Pumpkin">#D35400</color>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="aqua">#00FFFF</color>
+    <color name="blue">#0000FF</color>
+    <color name="fuchsia">#FF00FF</color>
+    <color name="purple">#800080</color>
+    <color name="red">#FF0000</color>
+    <color name="maroon">#CC0000</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="lime">#00FF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="cyan">#03D1CA</color>
+    <color name="pink">#FF1493</color>
+    <color name="black">#000000</color>
+    <color name="grey">#DA423E3E</color>
+    <color name="dark">#242323</color>
+    <color name="transdark">#68000000</color>
+    <color name="transparent">#00F44336</color>
+    <color name="dark_Transparent">#CB000000</color>
+    <color name="limetrans">#4F2FFF00</color>
+    <color name="lightblue">#4870FF</color>
+    <color name="transblue">#792196F3</color>
+    <color name="fulltransparent">#00000000</color>
+    <color name="whiteTransparent">#00FFFFFF</color>
+    <color name="lightGrey">#A8A8A8</color>
+    <color name="greyTransparent">#BA000000</color>
+    <color name="blackTransparent">#DD000000</color>
+    <color name="redTransparent">#BEA30C01</color>
+    <color name="dark_white">#A7A7A7</color>
+    <color name="lighttransparent">#AD555555</color>
+    <color name="darker_gray">#1F1F1F</color>
+
+    <color name="text_color_red">#FF6B6B</color>
+    <color name="line_color">#707070</color>
+    <color name="green">#4870FF</color>
+    <color name="light_white">#E0E0E0</color>
+    <color name="green_transparent">#7F95FF78</color>
+    <color name="green_orig">#00796B</color>
+
+</resources>

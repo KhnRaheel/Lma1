@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back4"
+    tools:context=".activities.RecoveryActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:drawablePadding="20dp"
+        android:drawableTint="@color/btn_color"
+        android:onClick="back"
+        android:text="Recovery"
+        android:textColor="@color/textcolor"
+        android:textSize="20sp"
+        app:drawableStartCompat="@drawable/back_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="This Device's Name"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_rectangle_1594"
+                android:drawableStart="@drawable/lock_white"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/textcolor"
+                android:hint="Current Device Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hint_color"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="This Device's Model Number"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/et_model"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_rectangle_1594"
+                android:drawableStart="@drawable/lock_white"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/textcolor"
+                android:hint="Current Device Model Number"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hint_color"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="This Device's IMEI"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/et_imei"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_rectangle_1594"
+                android:drawableStart="@drawable/lock_white"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/textcolor"
+                android:focusableInTouchMode="false"
+                android:hint="Current Device IMEI"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hint_color"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="This Device's Contact Number"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_rectangle_1594"
+                android:drawableStart="@drawable/lock_white"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/textcolor"
+                android:hint="Current Device Contact Number"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hint_color"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="Emergency Contact"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ic_rectangle_1594"
+                android:drawableStart="@android:drawable/stat_sys_phone_call"
+                android:drawablePadding="10dp"
+                android:drawableTint="@color/textcolor"
+                android:hint="Emergency Contact"
+                android:inputType="phone"
+                android:padding="10dp"
+                android:textColor="@color/textcolor"
+                android:textColorHint="@color/hint_color"
+                app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_save"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_back"
+                android:backgroundTint="@color/btn_color"
+                android:onClick="save"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="Tracking"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/et_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_rectangle_1594"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/textcolor"
+                    android:focusableInTouchMode="false"
+                    android:padding="10dp"
+                    android:text="Enable Tracking"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hint_color"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <Switch
+                    android:id="@+id/switch_tracking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_group_648"
+                    android:visibility="visible"
+                    app:tint="@color/textcolor" />
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginTop="10dp"
+                android:text="Send Sms"
+                android:textColor="@color/textcolor"
+                android:textSize="18sp"
+
+                />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp">
+
+                <EditText
+                    android:id="@+id/et_confirm_pass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/ic_rectangle_1594"
+                    android:drawablePadding="10dp"
+                    android:drawableTint="@color/textcolor"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:padding="10dp"
+                    android:text="Send SMS on sim removal"
+                    android:textColor="@color/textcolor"
+                    android:textColorHint="@color/hint_color"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+                <Switch
+                    android:id="@+id/switch_send_sms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_group_648"
+                    app:tint="@color/textcolor" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:scaleType="fitXY"-->
+<!--        android:src="@drawable/ic_group_654"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/imageView"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+</androidx.constraintlayout.widget.ConstraintLayout>

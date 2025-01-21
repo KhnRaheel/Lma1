@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "398254592051",
+    "firebase_url": "https://final-year-534ca-default-rtdb.firebaseio.com",
+    "project_id": "final-year-534ca",
+    "storage_bucket": "final-year-534ca.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:398254592051:android:9ded75a0067b5acd849346",
+        "android_client_info": {
+          "package_name": "com.lma"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "398254592051-a4gc9a3o5e35i7cegk9faita04g13ket.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAM1xyBhP6PUYvdiFxflfq7L92glcwqX5Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "398254592051-a4gc9a3o5e35i7cegk9faita04g13ket.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

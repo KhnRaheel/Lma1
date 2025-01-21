@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lma" >
+
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.BROADCAST_SMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature android:name="android.hardware.camera2" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.PREVENT_POWER_KEY" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- <uses-permission android:name="android.permission.INTERNET"/> -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".activities.CommandActivity" >
+        </activity>
+        <activity android:name=".activities.TrackingDevice" />
+        <activity
+            android:name=".activities.RecoveryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DeviceDetailsActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.TrackingActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.AddDeviceActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activities.DashboardActivity"
+            android:exported="true" />
+        <activity
+            android:name=".temp.MainScreen"
+            android:exported="true" /> <!-- <activity -->
+        <!-- android:name=".temp.MainScreen" -->
+        <!-- android:exported="true" /> -->
+        <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".activities.SignupActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity android:name=".activities.FlashBlinkActivity" />
+        <activity android:name=".activities.SendSmsActivity" />
+        <activity android:name=".activities.SetPatternActivity" />
+        <activity
+            android:name=".activities.SMSRemoteSettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LockSettingsActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity android:name=".activities.ExitActivity" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustNothing" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".recievers.ScreenStateReceiver"
+            android:enabled="true" >
+            <intent-filter>
+                <action android:name="my.action.string" />
+                <!-- and some more actions if you want -->
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".recievers.SmsReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".recievers.ServiceReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+
+        <service
+            android:name=".services.LockScreenManager"
+            android:enabled="true"
+            android:exported="true" />
+        <service
+            android:name=".services.ScreenLockerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
