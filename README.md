@@ -1,4 +1,4 @@
-Locate My Android
+Locate My Android                                                                                                                           
 Locate my Android helps to find their lost/stolen devices within less time and
 without using Internet. If device is being lost /stolen individual can First log into
 another android device with same register Id open in lost /stolen phone then he/she
